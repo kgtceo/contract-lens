@@ -1,5 +1,12 @@
 # contract-lens
 
+### ▶ Live demo: **[contract-lens.kareemghazal.com](https://contract-lens.kareemghazal.com)**
+
+Paste an agreement (or "Load example") and get the risk verdict and clause-by-clause findings with
+quotes. (First run ~10–20s.)
+
+![contract-lens: risk-ranked clauses from a contract, each with severity and a verbatim quote](docs/images/screenshot.png)
+
 > **Educational tool — not legal advice.** It highlights clauses to look at; it doesn't interpret
 > them for your situation. Consult a qualified lawyer for anything that matters.
 
