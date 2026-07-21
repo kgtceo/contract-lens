@@ -1,0 +1,14 @@
+[
+  {
+    "name": "one-sided-subscription",
+    "contract": "SUBSCRIPTION TERMS. 1. Term. This agreement renews automatically for successive 12-month periods unless you give written notice at least 90 days before the end of the current term. 2. Fees. We may increase fees at any time at our sole discretion, effective immediately. 3. Liability. Our total liability shall not exceed the equivalent of one month's fee. You agree to indemnify us against all claims. 4. IP. Any feedback or content you provide becomes our exclusive property. 5. Data. We may use, share and sell your usage data to third parties. 6. Changes. We may modify these terms at any time; continued use constitutes acceptance. 7. Disputes. You waive any right to a jury trial or to participate in a class action.",
+    "expect_findings": true,
+    "planted": ["auto-renewal with 90-day notice", "unilateral fee increase", "very low liability cap", "broad indemnification", "IP assignment of feedback/content", "sale of user data", "unilateral change of terms", "class-action / jury waiver"]
+  },
+  {
+    "name": "fair-balanced-agreement",
+    "contract": "SERVICE AGREEMENT. 1. Term. This agreement runs for 12 months and renews only if both parties agree in writing. Either party may terminate for convenience on 30 days' notice. 2. Fees. Fees are fixed for the term; any change requires 60 days' written notice and your consent. 3. Liability. Each party's liability is capped at the fees paid in the prior 12 months; neither party is liable for indirect losses. 4. IP. Each party retains ownership of its own IP; you own content you create. 5. Data. We process your data only to provide the service, per our privacy policy, and never sell it. 6. Changes. Changes require mutual written agreement. 7. Disputes. Disputes are resolved in the courts of England and Wales.",
+    "expect_findings": false,
+    "note": "A balanced, mutual agreement — the reviewer should raise few/no high-severity findings (precision)."
+  }
+]
