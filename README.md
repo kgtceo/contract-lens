@@ -43,6 +43,8 @@ python evals/run_evals.py --no-judge
 - **Judge** — opus scores correctness, usefulness and calibration (and that it doesn't overstep into
   legal advice).
 
+**Latest run (claude-sonnet-4-6, opus judge):** all gates pass — the one-sided contract surfaces 8 material findings (7 rated high), the fair balanced contract raises 0 high findings, and every quote is grounded in the document.
+
 ## Tests
 
 ```bash
@@ -52,7 +54,24 @@ pytest -q   # offline: the grounding pass drops fabricated quotes (fake client, 
 ## Web
 
 `web/` — a Next.js UI: paste an agreement, get the risk verdict and clause-by-clause findings with
-quotes, and the not-legal-advice banner throughout. See [DEPLOY.md](./DEPLOY.md).
+quotes, and the not-legal-advice banner throughout.
+
+Run it locally in two terminals:
+
+```bash
+# terminal 1 — the API
+pip install -e .
+cp .env.example .env                  # add ANTHROPIC_API_KEY
+python -m uvicorn contract_lens.api:app --port 8000
+
+# terminal 2 — the UI
+cd web
+npm install
+echo "NEXT_PUBLIC_API_URL=http://localhost:8000" > .env.local
+npm run dev                           # open http://localhost:3000
+```
+
+See [DEPLOY.md](./DEPLOY.md).
 
 ## License
 
