@@ -7,6 +7,10 @@ quotes. (First run ~10–20s.)
 
 ![contract-lens: risk-ranked clauses from a contract, each with severity and a verbatim quote](docs/images/screenshot.png)
 
+**How it works** — input → pipeline → output, with the eval harness that measures it:
+
+![contract-lens — architecture and eval harness](docs/images/architecture.png)
+
 > **Educational tool — not legal advice.** It highlights clauses to look at; it doesn't interpret
 > them for your situation. Consult a qualified lawyer for anything that matters.
 
